@@ -4,7 +4,7 @@ pragma solidity ^0.8.7;
 
 library Counters {
     struct Counter {
-        uint256 _value; // default: 0
+        uint256 _value;
     }
 
     function current(Counter storage counter) internal view returns (uint256) {
