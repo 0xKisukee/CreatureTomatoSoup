@@ -4,9 +4,6 @@ pragma solidity ^0.8.0;
 
 library Counters {
     struct Counter {
-        // This variable should never be directly accessed by users of the library: interactions must be restricted to
-        // the library's function. As of Solidity v0.5.2, this cannot be enforced, though there is a proposal to add
-        // this feature: see https://github.com/ethereum/solidity/issues/4637
         uint256 _value; // default: 0
     }
 
@@ -44,14 +41,6 @@ abstract contract Context {
 }
 
 interface IERC165 {
-    /**
-     * @dev Returns true if this contract implements the interface defined by
-     * `interfaceId`. See the corresponding
-     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]
-     * to learn more about how these ids are created.
-     *
-     * This function call must use less than 30 000 gas.
-     */
     function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }
 
